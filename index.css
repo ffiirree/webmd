@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0; }
+
+/*///////////////////////////// 标题 /////////////////////////*/
+.webmd-title-input-margin {
+  padding: 0 60px;
+  border-top: #aaaaaa 1px solid;
+  /* 输入 */ }
+  .webmd-title-input-margin #webmd-title-input {
+    display: block;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 49px;
+    font-family: Consolas, 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 20px;
+    line-height: 50px; }
+
+#webmd {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  bottom: 0; }
+
+/*# sourceMappingURL=index.css.map */

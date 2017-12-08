@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+/*///////////////////////// -- body -- ///////////////////////*/
+// 默认
+// \ 外边界和内边界均为0
+@mixin body($selector) {
+    #{$selector} {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@include body('.body');
+
+
+/*///////////////////////// -- button -- ///////////////////////*/
+@mixin  button($selector, $width: auto,  $height:auto, $br: 5px, $bgc: inherit, $hbgc: #00b0e8) {
+    #{$selector} {
+        border: 1px solid #00b0e8;
+        outline: none;
+
+        height: $height;
+        width: $width;
+        border-radius: $br;
+
+        background-color: $bgc;
+        color: $hbgc;
+    }
+
+    #{$selector}:hover {
+        color: #ffffff;
+        background-color: $hbgc;
+        cursor: pointer;
+    }
+}
+
+// 默认的按钮，#00AAAA->#00b0e8
+@include button('.button');
+
+
+/*///////////////////////// -- ul -- ///////////////////////*/
+@mixin  ul($selector, $float: left, $height: auto) {
+    #{$selector} {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        overflow: auto;
+        height: $height;
+    }
+
+    #{$selector} li {
+        padding: 0;
+        margin: 0;
+        height: $height;
+        float: $float;
+    }
+}
+
+@include ul('.menu');
+@include ul('.float-ul');
+@include ul('.float-ul-left', left);
+@include ul('.float-ul-right', right);
+
+
+/*///////////////////////// -- hr -- ///////////////////////*/
+.hr {
+    border: none;
+    border-top: #cccccc 1px solid;
+}
+
+
+/*///////////////////////// -- a -- ///////////////////////*/
+@mixin  a($selector, $color: #00AAAA, $hover-color: #00b0e8) {
+    #{$selector} {
+        text-decoration-line: none;
+        color: $color;
+    }
+
+    #{$selector}:hover {
+        color: $hover-color;
+    }
+}
+
+@include a('.a');
+
+
+/*///////////////////////// -- input -- ///////////////////////*/
+@mixin input($selector) {
+    #{$selector} {
+        display: block;
+
+        border: none;
+        outline: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@include input('.input');
+
+
+/*///////////////////////// -- textarea -- ///////////////////////*/
+@mixin textarea($selector) {
+    #{$selector} {
+        display: block;
+        padding: 0;
+        margin: 0;
+
+        resize: none;
+        outline: none;
+        border: none;
+
+        background-color: white;
+    }
+}
+
+@include textarea('.textarea');
+
+
+/*///////////////////////// -- scrollbar -- ///////////////////////*/
+@mixin scrollbar(
+    $selector,
+    $width: 10px,
+    $color: #bcbcbc, $hover-color:  #aaa,
+    $bgc: #ddd) {
+
+    #{$selector}::-webkit-scrollbar {
+        width: 10px;
+        background-color: $bgc;
+    }
+
+    #{$selector}::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background:$color;
+    }
+
+    #{$selector}::-webkit-scrollbar-thumb:hover {
+        background: $hover-color;
+    }
+}
+
+@include scrollbar('.scrollbar');

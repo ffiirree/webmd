@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+@import "widget";
+@import "mark";
+
+// main
+.Webmd {
+    display: flex;
+    flex-flow: column;
+
+    .webmd-menu {
+        height: 40px;
+        background-color: #dddddd;
+        flex: 0 0 40px;
+
+        ul {
+            display: inline-block;
+            padding: 0 0 0 35px;
+            margin: 0;
+            list-style: none;
+
+            overflow: auto;
+            height: auto;
+
+            li {
+                padding: 0;
+                margin: 0;
+                height: 40px;
+                float: left;
+
+                i,a {
+                    display: block;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    width: 40px;
+
+                    cursor: pointer;
+
+                    text-decoration: none;
+                    color: #555;
+                }
+
+                i:hover,a:hover {
+                    background-color: #888888;
+                }
+            }
+        }
+    }
+
+    .editor {
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: row;
+
+        @include scrollbar(#edit-page, 10px);
+        #edit-page {
+            flex: 0 0 50%;
+            height: inherit;
+            background-color: #f6f6f6;
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            #edit-area {
+                padding: 0 40px;
+                box-sizing: border-box;
+                margin: auto;
+
+                .CodeMirror {
+                    height: auto;
+                    background-color: inherit;
+                }
+            }
+        }
+
+        #preview-page {
+            flex: 0 0 50%;
+            height: inherit;
+            overflow-y: auto;
+            overflow-x: hidden;
+            background-color: white;
+
+            #preview-area {
+                padding: 0 40px;
+                box-sizing: border-box;
+                margin: auto;
+            }
+        }
+        #preview-page::-webkit-scrollbar {
+            display: none;
+        }
+
+    }
+}
+
+
+/*///////////////////////////// 插入链接窗口 /////////////////////////*/
+.dialog-box-background {
+    // 对话框的背景
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+
+    //
+    .dialog-box {
+        background-color: white;
+
+        width: 500px;
+
+        margin: 200px auto auto;
+        padding-bottom: 10px;
+
+        // 标题
+        .dialog-box-title {
+            background-color: #dddddd;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            font-size: 17px;
+        }
+    }
+}
+
+.link-title,
+.link-url,
+.picture-title,
+.picture-url {
+    margin: 15px 0;
+    padding: 5px 25px;
+}
+
+.link-title input,
+.link-url input,
+.picture-title input,
+.picture-url input{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 40px;
+    width: 450px;
+
+    outline: none;
+    border: solid 1px #f0f0f0;
+    padding: 5px 15px;
+    background-color: #f7f8fa;
+
+    font-size: 16px;
+
+}
+
+.link-window-operation,
+.picture-window-operation {
+    overflow: auto;
+    padding: 5px 15px;
+
+    @include button(button, 65px, 26px);
+
+    button {
+        float: right;
+        margin: 0 10px;
+    }
+}
+
+.picture-upload {
+    border: #cccccc 1px dashed;
+
+    position: relative;
+    width: 450px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+
+    margin: 10px auto;
+    background-color: #f7f8fa;
+    color: #888888;
+
+    input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0;
+
+        width: 250px;
+        height: 100px;
+    }
+
+    input:hover {
+        cursor: pointer;
+    }
+}

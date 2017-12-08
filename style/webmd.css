@@ -1,0 +1,456 @@
+@charset "UTF-8";
+/*///////////////////////// -- body -- ///////////////////////*/
+.body {
+  margin: 0;
+  padding: 0; }
+
+/*///////////////////////// -- button -- ///////////////////////*/
+.button {
+  border: 1px solid #00b0e8;
+  outline: none;
+  height: auto;
+  width: auto;
+  border-radius: 5px;
+  background-color: inherit;
+  color: #00b0e8; }
+
+.button:hover {
+  color: #ffffff;
+  background-color: #00b0e8;
+  cursor: pointer; }
+
+/*///////////////////////// -- ul -- ///////////////////////*/
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+  height: auto; }
+
+.menu li {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  float: left; }
+
+.float-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+  height: auto; }
+
+.float-ul li {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  float: left; }
+
+.float-ul-left {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+  height: auto; }
+
+.float-ul-left li {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  float: left; }
+
+.float-ul-right {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+  height: auto; }
+
+.float-ul-right li {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  float: right; }
+
+/*///////////////////////// -- hr -- ///////////////////////*/
+.hr {
+  border: none;
+  border-top: #cccccc 1px solid; }
+
+/*///////////////////////// -- a -- ///////////////////////*/
+.a {
+  text-decoration-line: none;
+  color: #00AAAA; }
+
+.a:hover {
+  color: #00b0e8; }
+
+/*///////////////////////// -- input -- ///////////////////////*/
+.input {
+  display: block;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0; }
+
+/*///////////////////////// -- textarea -- ///////////////////////*/
+.textarea {
+  display: block;
+  padding: 0;
+  margin: 0;
+  resize: none;
+  outline: none;
+  border: none;
+  background-color: white; }
+
+/*///////////////////////// -- scrollbar -- ///////////////////////*/
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+  background-color: #ddd; }
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #bcbcbc; }
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #aaa; }
+
+.mark, #edit-area {
+  font-family: Consolas, 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #555;
+  font-size: 16px;
+  line-height: 26px; }
+
+/*////////////////////////////-- h --////////////////////////*/
+.mark h1 {
+  margin: 10px 0; }
+
+.mark h2 {
+  margin: 10px 0; }
+
+.mark h3 {
+  margin: 8px 0; }
+
+.mark h4 {
+  margin: 6px 0; }
+
+.mark h5 {
+  margin: 4px 0; }
+
+.mark h6 {
+  margin: 2px 0; }
+
+/*////////////////////////////-- a --////////////////////////*/
+.mark a {
+  color: #3a90f2;
+  text-decoration-line: none; }
+
+.mark a:hover {
+  color: #3e7ac2; }
+
+/*////////////////////////////-- hr --////////////////////////*/
+.mark hr {
+  margin: 25px 0;
+  border: none;
+  border-top: #aaaaaa 1px dashed; }
+
+/*////////////////////////////-- quote --////////////////////////*/
+.mark blockquote {
+  margin: 5px 0;
+  padding: 15px;
+  border-left: #EAEEED 10px solid;
+  background-color: #f5f5f5; }
+
+.mark blockquote p,
+.mark blockquote ul {
+  margin: 0; }
+
+/*////////////////////////////-- table --////////////////////////*/
+.mark table {
+  width: 100%;
+  font-family: verdana,arial, sans-serif;
+  border: 1px #888888;
+  border-collapse: collapse; }
+
+.mark table th {
+  padding: 8px;
+  border: 1px solid #888888;
+  background-color: #EAEEED; }
+
+.mark table td {
+  padding: 8px;
+  border: 1px solid #888888;
+  background-color: #ffffff;
+  color: #666666; }
+
+.mark table tr:hover td {
+  background-color: #f5f5f5; }
+
+/*////////////////////////////-- code --////////////////////////*/
+.mark code {
+  font-family: Consolas, sans-serif !important;
+  background-color: #f0f0f0 !important; }
+
+.mark pre {
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 24px;
+  overflow: hidden;
+  line-height: 20px;
+  font-size: 14px; }
+  .mark pre > code {
+    order: 2;
+    flex: 1 1 auto;
+    padding-left: 20px;
+    overflow-y: auto; }
+  .mark pre .has-numbering {
+    background-color: #f5f5f5  !important; }
+  .mark pre .pre-numbering {
+    list-style: none;
+    order: 1;
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 0.5em 0.5em 0.5em 20px;
+    text-align: right;
+    font-family: Consolas, sans-serif;
+    color: #AAA;
+    background-color: #EAEEED; }
+
+/*////////////////////////////-- code --////////////////////////*/
+.mark img {
+  display: block;
+  max-width: 75%;
+  margin: auto; }
+
+.cm-s-webmd.CodeMirror {
+  color: #555; }
+
+.cm-s-webmd div.CodeMirror-selected {
+  background: #e0e0e0; }
+
+.cm-s-webmd .CodeMirror-line::selection, .cm-s-webmd .CodeMirror-line > span::selection, .cm-s-webmd .CodeMirror-line > span > span::selection {
+  background: #e0e0e0; }
+
+.cm-s-webmd .CodeMirror-line::-moz-selection, .cm-s-webmd .CodeMirror-line > span::-moz-selection, .cm-s-webmd .CodeMirror-line > span > span::-moz-selection {
+  background: #e0e0e0; }
+
+.cm-s-webmd .CodeMirror-gutters {
+  background: #f5f5f5;
+  border-right: 0px; }
+
+.cm-s-webmd .CodeMirror-guttermarker {
+  color: #ac4142; }
+
+.cm-s-webmd .CodeMirror-guttermarker-subtle {
+  color: #b0b0b0; }
+
+.cm-s-webmd .CodeMirror-linenumber {
+  color: #b0b0b0; }
+
+.cm-s-webmd .CodeMirror-cursor {
+  border-left: 1px solid #505050; }
+
+.cm-s-webmd .cm-quote {
+  color: #292; }
+
+.cm-s-webmd span.cm-comment {
+  color: #8f5536; }
+
+.cm-s-webmd span.cm-atom {
+  color: #aa759f; }
+
+.cm-s-webmd span.cm-number {
+  color: #aa759f; }
+
+.cm-s-webmd span.cm-property, .cm-s-webmd span.cm-attribute {
+  color: #90a959; }
+
+.cm-s-webmd span.cm-keyword {
+  color: #ac4142; }
+
+.cm-s-webmd span.cm-string {
+  color: #f4bf75; }
+
+.cm-s-webmd span.cm-variable {
+  color: #90a959; }
+
+.cm-s-webmd span.cm-variable-2 {
+  color: #6a9fb5; }
+
+.cm-s-webmd span.cm-def {
+  color: #d28445; }
+
+.cm-s-webmd span.cm-bracket {
+  color: #202020; }
+
+.cm-s-webmd span.cm-tag {
+  color: #ac4142; }
+
+.cm-s-webmd span.cm-link {
+  color: #aa759f; }
+
+.cm-s-webmd span.cm-error {
+  background: #ac4142;
+  color: #505050; }
+
+.cm-s-webmd .CodeMirror-activeline-background {
+  background: #DDDCDC; }
+
+.cm-s-webmd .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important; }
+
+.Webmd {
+  display: flex;
+  flex-flow: column; }
+  .Webmd .webmd-menu {
+    height: 40px;
+    background-color: #dddddd;
+    flex: 0 0 40px; }
+    .Webmd .webmd-menu ul {
+      display: inline-block;
+      padding: 0 0 0 35px;
+      margin: 0;
+      list-style: none;
+      overflow: auto;
+      height: auto; }
+      .Webmd .webmd-menu ul li {
+        padding: 0;
+        margin: 0;
+        height: 40px;
+        float: left; }
+        .Webmd .webmd-menu ul li i, .Webmd .webmd-menu ul li a {
+          display: block;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          width: 40px;
+          cursor: pointer;
+          text-decoration: none;
+          color: #555; }
+        .Webmd .webmd-menu ul li i:hover, .Webmd .webmd-menu ul li a:hover {
+          background-color: #888888; }
+  .Webmd .editor {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row; }
+    .Webmd .editor #edit-page::-webkit-scrollbar {
+      width: 10px;
+      background-color: #ddd; }
+    .Webmd .editor #edit-page::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background: #bcbcbc; }
+    .Webmd .editor #edit-page::-webkit-scrollbar-thumb:hover {
+      background: #aaa; }
+    .Webmd .editor #edit-page {
+      flex: 0 0 50%;
+      height: inherit;
+      background-color: #f6f6f6;
+      overflow-y: auto;
+      overflow-x: hidden; }
+      .Webmd .editor #edit-page #edit-area {
+        padding: 0 40px;
+        box-sizing: border-box;
+        margin: auto; }
+        .Webmd .editor #edit-page #edit-area .CodeMirror {
+          height: auto;
+          background-color: inherit; }
+    .Webmd .editor #preview-page {
+      flex: 0 0 50%;
+      height: inherit;
+      overflow-y: auto;
+      overflow-x: hidden;
+      background-color: white; }
+      .Webmd .editor #preview-page #preview-area {
+        padding: 0 40px;
+        box-sizing: border-box;
+        margin: auto; }
+    .Webmd .editor #preview-page::-webkit-scrollbar {
+      display: none; }
+
+/*///////////////////////////// 插入链接窗口 /////////////////////////*/
+.dialog-box-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999; }
+  .dialog-box-background .dialog-box {
+    background-color: white;
+    width: 500px;
+    margin: 200px auto auto;
+    padding-bottom: 10px; }
+    .dialog-box-background .dialog-box .dialog-box-title {
+      background-color: #dddddd;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      font-size: 17px; }
+
+.link-title,
+.link-url,
+.picture-title,
+.picture-url {
+  margin: 15px 0;
+  padding: 5px 25px; }
+
+.link-title input,
+.link-url input,
+.picture-title input,
+.picture-url input {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 40px;
+  width: 450px;
+  outline: none;
+  border: solid 1px #f0f0f0;
+  padding: 5px 15px;
+  background-color: #f7f8fa;
+  font-size: 16px; }
+
+.link-window-operation,
+.picture-window-operation {
+  overflow: auto;
+  padding: 5px 15px; }
+  .link-window-operation button,
+  .picture-window-operation button {
+    border: 1px solid #00b0e8;
+    outline: none;
+    height: 26px;
+    width: 65px;
+    border-radius: 5px;
+    background-color: inherit;
+    color: #00b0e8; }
+  .link-window-operation button:hover,
+  .picture-window-operation button:hover {
+    color: #ffffff;
+    background-color: #00b0e8;
+    cursor: pointer; }
+  .link-window-operation button,
+  .picture-window-operation button {
+    float: right;
+    margin: 0 10px; }
+
+.picture-upload {
+  border: #cccccc 1px dashed;
+  position: relative;
+  width: 450px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 10px auto;
+  background-color: #f7f8fa;
+  color: #888888; }
+  .picture-upload input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    width: 250px;
+    height: 100px; }
+  .picture-upload input:hover {
+    cursor: pointer; }
+
+/*# sourceMappingURL=webmd.css.map */
